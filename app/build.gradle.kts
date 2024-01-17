@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -66,4 +67,10 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+    implementation("com.google.firebase:firebase-auth:16.0.5")
+    implementation("com.google.firebase:firebase-core:16.0.6")
+    implementation("com.google.firebase:firebase-database:16.0.5")
+    implementation("com.google.android.gms:play-services-auth:16.0.1")
+    implementation("com.firebaseui:firebase-ui-auth:4.2.1")
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
 }
