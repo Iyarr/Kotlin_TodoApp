@@ -11,7 +11,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath("com.google.gms:google-services:4.2.0")
+        classpath("com.google.gms:google-services:4.4.0")
         //上の行を追記
     }
 }
