@@ -52,3 +52,5 @@ Qiitaの古い記事や新しい公式ドキュメントから引用したコー
 > Qiitaで書かれていた、com.firebaseui:firebase-ui-authの指定されていたバージョンが使えない
 > よって、com.firebaseui:firebase-ui-auth野バージョンは公式ドキュメントに合わせた
 > また、com.google.firebase:firebase-authをkotlin専用のライブラリのcom.google.firebase:firebase-auth-ktxに変更した
+> build.gradle.ktsで指定しているNamespaceが認識されなくなった意味わからん
+> とりあえずやり直すことにした
