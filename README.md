@@ -49,8 +49,14 @@ Qiitaの古い記事や新しい公式ドキュメントから引用したコー
 
 > 1/31
 > 前回のエラー解決
-> Qiitaで書かれていた、com.firebaseui:firebase-ui-authの指定されていたバージョンが使えない
-> よって、com.firebaseui:firebase-ui-auth野バージョンは公式ドキュメントに合わせた
-> また、com.google.firebase:firebase-authをkotlin専用のライブラリのcom.google.firebase:firebase-auth-ktxに変更した
-> build.gradle.ktsで指定しているNamespaceが認識されなくなった意味わからん
-> とりあえずやり直すことにした
+> - Qiitaで書かれていた、com.firebaseui:firebase-ui-authの指定されていたバージョンが使えない
+> - 7.2.0にしたら解決した
+> - androidx.activity:activity:1.8.2を使うには、Android APIs 34以上が必要
+> - 34にアップデートしたら同期はできたがclean projectからのrebuild projectでエラーが発生した
+>   - Duplicate class com.google.android.gms.internal.measurement.zzu found in modules firebase-analytics-impl-16.2.4-runtime 
+>   - それぞれのライブラリがどこで指定されているのか不明
+> - 使用するライブラリを見直すことにした。成るべく公式サイトに合わせることにした
+> - com.firebaseui:firebase-ui-authのバージョンは公式ドキュメントのものに変更してerrorはなくなった
+> - com.google.firebase:firebase-authをkotlin専用のライブラリのcom.google.firebase:firebase-auth-ktxに変更した
+> - build.gradle.ktsで指定しているNamespaceが認識されなくなった意味わからん
+> - とりあえずやり直すことにした
