@@ -75,5 +75,4 @@ dependencies {
     implementation("com.google.firebase:firebase-database:16.0.5")
     implementation("com.google.android.gms:play-services-auth:16.0.1")
     implementation("com.firebaseui:firebase-ui-auth:7.2.0")
-    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
 }

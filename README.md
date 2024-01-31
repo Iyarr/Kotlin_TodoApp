@@ -59,4 +59,4 @@ Qiitaの古い記事や新しい公式ドキュメントから引用したコー
 > - com.firebaseui:firebase-ui-authのバージョンは公式ドキュメントのものに変更してerrorはなくなった
 > - com.google.firebase:firebase-authをkotlin専用のライブラリのcom.google.firebase:firebase-auth-ktxに変更した
 > - build.gradle.ktsで指定しているNamespaceが認識されなくなった意味わからん
-> - とりあえずやり直すことにした
+> - firebase-bomの使用をやめたら解決したなんでかはわからんけどなにかのライブラリと重複してたのかな

@@ -11,6 +11,7 @@ buildscript {
         google()
     }
     dependencies {
+        classpath("com.android.tools.build:gradle:3.2.1")
         classpath("com.google.gms:google-services:4.4.0")
         //上の行を追記
     }
